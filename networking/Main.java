@@ -1,4 +1,5 @@
 import networking.MyServer;
+import networking.MyClient;
 
 import java.util.Scanner;
 
@@ -11,6 +12,7 @@ void main() {
             new MyServer().start(PORT_NUMBER);
         } else {
             System.out.println("Client TODO");
+            new MyClient().start(PORT_NUMBER, scanner);
         }
     }
 }
